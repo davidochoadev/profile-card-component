@@ -73,7 +73,7 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border-bottom: 1px solid var(--dark-gray);
+   border-bottom: 1px solid hsl(0deg 0% 86.23%);
 }
 
 .card__owner-section-informations {
@@ -88,20 +88,48 @@ body {
 .card__owner-name {
    color: var(--very-dark-desaturated-blue);
    letter-spacing: normal;
-   font-size: 1.25rem;
+   font-size: 1.2rem;
    margin: .5em 0 .5em 0;
 }
 
 .card__owner-age {
    color: var(--dark-gray);
    font-size: 1.3rem;
-   padding: 0 0 0 15px;
+   padding: 0 0 0 10px;
    font-weight: 400;
 }
 .card__owner-location {
    color: var(--dark-gray);
    font-size: .9rem;
    text-align: center;
+}
+/*
+   CARD SOCIAL CONTAINER 
+*/
+.card__owner-socials-statics {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   padding: 0 1em
+}
+/*
+   CARD SOCIAL STATS
+*/
+.card__social-stat {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-size: .7rem;
+   color: var(--dark-gray);
+   letter-spacing: 0.2rem;
+   text-align: center;
+}
+.card__social-stat span{
+   letter-spacing: normal;
+   font-size: 1.3rem;
+   font-weight: 700;
+   padding-bottom: .5rem;
 }
 
 /* 
