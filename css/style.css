@@ -11,8 +11,17 @@
 * {
    margin: 0;
    padding: 0;
-   color: var(--dark-grayish-blue);
+   color: var(--very-dark-desaturated-blue);
    box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+   background: var(--dark-cyan);
+   background-size: 100%;
+   display: grid;
+   place-items: center;
+   font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* 
@@ -27,7 +36,7 @@
    text-align: center;
 }
 .author__section > * {
-   color: var(--dark-blue);
+   color: var(--very-dark-desaturated-blue);
    font-weight: 500;
 }
 .author__section > .author__spacer {
@@ -38,5 +47,5 @@
    transition: .3s ease-out;
 }
 .author__section > .author__anchor:hover {
-   color: var(--bright-blue);
+   color: var(--dark-grayish-blue);
 }
