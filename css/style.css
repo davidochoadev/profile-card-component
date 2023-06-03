@@ -1,0 +1,42 @@
+:root {
+   --dark-cyan: hsl(185, 75%, 39%);
+   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+   --dark-grayish-blue: hsl(227, 10%, 46%);
+
+   --dark-gray: hsl(0, 0%, 59%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   color: var(--dark-grayish-blue);
+   box-sizing: border-box;
+}
+
+/* 
+   FOOTER SECTION
+*/
+.author__section{
+   position: fixed;
+   bottom: 0;
+   padding-bottom: 15px;
+   z-index: 1;
+   width: 100%;
+   text-align: center;
+}
+.author__section > * {
+   color: var(--dark-blue);
+   font-weight: 500;
+}
+.author__section > .author__spacer {
+   margin: 0 4px 0 4px;
+}
+.author__section, a {
+   text-decoration: none;
+   transition: .3s ease-out;
+}
+.author__section > .author__anchor:hover {
+   color: var(--bright-blue);
+}
