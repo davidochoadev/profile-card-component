@@ -16,12 +16,92 @@
 }
 
 body {
-   height: 100vh;
-   background: var(--dark-cyan);
-   background-size: 100%;
+   min-height: 100vh;
+   background-color: var(--dark-cyan);
+   background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+   background-position: right 40vw bottom 60vh, left 25vw top 50vh;
+   background-repeat: no-repeat, no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-rendering: optimizeSpeed;
+   font-family: 'KumbhSans', sans-serif;
+}
+/*
+   MAIN SECTION
+*/
+.card__main-container {
+   width: 85%;
+   height: 23.2em;
    display: grid;
-   place-items: center;
-   font-family: 'Kumbh Sans', sans-serif;
+   grid-template-rows: .6fr 1fr;
+   background: white;
+   color: var(--dark-grayish-blue);
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 0 60px 80px rgba(0,0,0,.16);
+}
+
+.card__banner-section {
+   overflow: hidden;
+}
+
+.card__banner {
+   width: 100%;
+   transition: .7s ease;
+}
+
+.card__content-section {
+   display: grid;
+   position: relative;
+   grid-template-rows: 1.5fr 1fr;
+}
+
+.card__owner-avatar {
+   position: absolute;
+   top: -55px;
+   border: 5px solid #f7f7f7;
+   border-radius: 50%;
+   place-self: center;
+   transition: .7s ease;
+   width: 105px;
+   height: 105px;
+}
+
+.card__owner-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 1px solid var(--dark-gray);
+}
+
+.card__owner-section-informations {
+   padding-top: 2em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* 
+   CARD OWNER INFORMATIONS
+*/
+.card__owner-name {
+   color: var(--very-dark-desaturated-blue);
+   letter-spacing: normal;
+   font-size: 1.25rem;
+   margin: .5em 0 .5em 0;
+}
+
+.card__owner-age {
+   color: var(--dark-gray);
+   font-size: 1.3rem;
+   padding: 0 0 0 15px;
+   font-weight: 400;
+}
+.card__owner-location {
+   color: var(--dark-gray);
+   font-size: .9rem;
+   text-align: center;
 }
 
 /* 
@@ -48,4 +128,13 @@ body {
 }
 .author__section > .author__anchor:hover {
    color: var(--dark-grayish-blue);
+}
+
+@media (min-width: 35em)
+body {
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+}
+
+.card__main-container{
+   width: 21.9em;
 }

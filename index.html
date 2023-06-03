@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Profile Card Component"/>
+  <meta name="keywords" content="Frontend Mentor, Profile Card Component Challenge, davidochoa.dev"/>
+  <meta property="og:title" content="Profile Card Component" />
+  <meta property="og:description" content="Profile Card Component solution by davidochoadev for FrontendMentor.io"/>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
@@ -16,18 +20,38 @@
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <main class="card__main-container">
+    <picture class="card__banner-section">
+      <img src="./images/bg-pattern-card.svg" alt="" class="card__banner" aria-hidden="true"/>
+    </picture>
+    <section class="card__content-section">
+      <img src="./images/image-victor.jpg" alt="profile avatar of victor" class="card__owner-avatar">
+      <div class="card__owner-section">
+      <div class="card__owner-section-informations">
+        <h1 class="card__owner-name">Victor Crest</h1>
+        <span class="card__owner-age">26</span>
+      </div>
+      <span class="card__owner-location">
+        London
+      </span>
+      <hr>
+      </div>
+      <div class="card__owner-socials-statics">
+        <div class="card__owner-followers">
+          <span>80K</span>
+          Followers
+        </div>
+        <div class="card__owner-likes">
+          <span>803K</span>
+          Likes
+        </div>
+        <div class="card__owner-photos">
+          <span>1.4K</span>
+          Photos
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="author__section">
     <a href="https://davidochoa.fly.dev" target="_blank" class="author__anchor">davidochoa.dev</a>
     <span class="author__spacer">|</span>
