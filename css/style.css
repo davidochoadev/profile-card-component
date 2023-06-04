@@ -99,6 +99,7 @@ body {
    letter-spacing: normal;
    font-size: 1.2rem;
    margin: .5em 0 .5em 0;
+   font-weight: 700;
 }
 
 .card__owner-age {
