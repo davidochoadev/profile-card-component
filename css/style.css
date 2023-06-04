@@ -30,6 +30,16 @@ body {
 /*
    MAIN SECTION
 */
+.visually-hidden {
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   }
+
 .card__main-container {
    width: 85%;
    height: 23.2em;
@@ -119,9 +129,6 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   font-size: .7rem;
-   color: var(--dark-gray);
-   letter-spacing: 0.2rem;
    text-align: center;
 }
 .card__social-stat span{
@@ -129,6 +136,11 @@ body {
    font-size: 1.3rem;
    font-weight: 700;
    padding-bottom: .5rem;
+}
+.card__social-stat p {
+   font-size: .7rem;
+   color: var(--dark-gray);
+   letter-spacing: 0.2rem;
 }
 
 /* 
