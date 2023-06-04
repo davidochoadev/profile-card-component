@@ -131,11 +131,12 @@ body {
    justify-content: center;
    text-align: center;
 }
-.card__social-stat span{
+.card__social-stat > .number{
    letter-spacing: normal;
-   font-size: 1.3rem;
    font-weight: 700;
    padding-bottom: .5rem;
+   font-size: 1.2rem;
+   color: var(--very-dark-desaturated-blue);
 }
 .card__social-stat p {
    font-size: .7rem;
